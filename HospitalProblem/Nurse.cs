@@ -7,7 +7,10 @@ namespace HospitalProblem
     class Nurse : Employee
     {
         public int NumberOfPatients { get; set; }
-
+        public Nurse(int numberOfPatients):base("",200, 50000)
+        {
+            NumberOfPatients = numberOfPatients;
+        }
         public void Drawblood(Patient thePatient)
         {
             //effects health level and blood level differently for nurse than doctor
