@@ -8,9 +8,8 @@ namespace HospitalProblem
         {
             string userInput = "";
             // create employee
-            Employee testEmployee = new Employee("john smith", 100, 20000);
-            testEmployee.AddEmployee(testEmployee);
-            testEmployee.PrintEmployees();
+           // Employee testEmployee = new Employee("john smith", 100, 20000,"Doctor");
+            
             Menu userMenu = new Menu();
 
 

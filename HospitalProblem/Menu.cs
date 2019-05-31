@@ -7,8 +7,11 @@ namespace HospitalProblem
     class Menu
     {
         string userInput = "";
+        Employee testEmployee;
+
        public  Menu()
         {
+            testEmployee = new Employee("", 0, 0,"");
             do
             {
                 Console.WriteLine("1. Add Employee to list");
@@ -22,9 +25,10 @@ namespace HospitalProblem
                 switch (userInput)
                 {
                     case "1":
-
+                        testEmployee.AddEmployee(testEmployee);
                         break;
                     case "2":
+                        testEmployee.PrintEmployees();
                         break;
                     case "3":
                         break;

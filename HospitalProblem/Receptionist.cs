@@ -8,7 +8,7 @@ namespace HospitalProblem
     {
 
         public bool OnThePhone { get; set; }
-        public Receptionist(bool onThePhone) : base("",300,45000)
+        public Receptionist(bool onThePhone) : base("", 300, 0, "")
         {
             OnThePhone = onThePhone;
         }

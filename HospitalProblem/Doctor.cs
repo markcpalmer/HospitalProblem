@@ -8,13 +8,14 @@ namespace HospitalProblem
     {
         public string SpecialtyArea { get; set; }
 
-        public Doctor(string specialtyArea) : base("", 400, 90000)
+        public Doctor(string specialtyArea) : base("", 400, 0,"")
         {
             SpecialtyArea = specialtyArea;
         }
         public override void PayEmployees()
         {
             base.PayEmployees();
+            Salary = 90000.00;
         }
         public void DrawBlood(Patient thePatient)
         {
